@@ -1,0 +1,30 @@
+<!-- Peça ao usuário para digitar idades de 10 pessoas. Exiba quantas pessoas são maior de idade (18 anos) e
+quantas são menores. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+</head>
+
+<body>
+    <h1>Exercicio 04</h1>
+
+    <script>
+        let maioresIdade = 0;
+        let menoresIdade = 0;
+        for (let i = 1; i <= 10; i++) {
+            let idade = parseInt(prompt(`Qual a idade da ${i}ª pessoa?`));
+            if (idade >= 18) {
+                maioresIdade++;
+            } else {
+                menoresIdade++;
+            }
+        }
+        alert(`Das 10 pessoas, ${maioresIdade} são maiores de idade e ${menoresIdade} são menores de idade.`);
+    </script>
+</body>
+
+</html>

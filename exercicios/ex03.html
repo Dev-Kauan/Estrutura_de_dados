@@ -1,0 +1,23 @@
+<!-- Faça um laço para imprimir todos os anos, do ano atual até o ano de seu nascimento. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <h1>Exercicio 03</h1>
+    <p class="resultado"></p>
+    <script>
+        const anoAtual = parseInt(prompt("Qual é o ano atual?"));
+        const anoNascimento = parseInt(prompt("Qual o ano em que nasceu?"));
+        let anos = "";
+        for(let i = anoAtual; i >= anoNascimento; i--){
+            anos += i + "<br>";
+        }
+        let resultado = document.querySelector('.resultado');
+        resultado.innerHTML = anos;
+    </script>
+</body>
+</html>
